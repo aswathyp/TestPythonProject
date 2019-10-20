@@ -1,7 +1,7 @@
 
 a=[]
 
-for i in rane(0,10):
+for i in range(0,10):
     a.append(i)
     print(a)
 
@@ -21,3 +21,4 @@ b[1] = y
 
 b[0]()
 b[1]()
+
