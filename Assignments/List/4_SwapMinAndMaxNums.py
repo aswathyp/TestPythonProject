@@ -1,15 +1,18 @@
 
 # 4. Swap minimum and maximum items in list
 
-numbers = [12, 3, 20, 50, 8, 40, 27, 100]
+numbers = [int(i) for i in input('Enter Num List: ').split()]
 print('Current List: ', numbers)
 
-# Easiest Way
 print('\nMinimum Element in List: ', min(numbers))
 print('Maximum Element in List: ', max(numbers))
 
 minIndex = numbers.index(min(numbers))
 maxIndex = numbers.index(max(numbers))
+
+numbers[minIndex], numbers[maxIndex] = numbers[maxIndex], numbers[minIndex]
+
+print('\nUpdated List: ', numbers)
 
 # Longer way
 # minIndex, maxIndex = 0, 0
@@ -24,10 +27,3 @@ maxIndex = numbers.index(max(numbers))
 #         maxIndex = i
 #         maxValue = numbers[i]
 #
-
-temp = numbers[minIndex]
-numbers[minIndex] = numbers[maxIndex]
-numbers[maxIndex] = temp
-
-print('\nUpdated List: ', numbers)
-

@@ -14,3 +14,5 @@ for i in range(1, len(numbers)):
         greaterElementCount = greaterElementCount + 1
 
 print('\n\nTotal count greater than their peers above: ', greaterElementCount)
+
+# While Loop - Sequence of numbers ending with 0.
